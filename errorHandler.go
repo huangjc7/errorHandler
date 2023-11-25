@@ -1,11 +1,11 @@
-package errorH
+package errorHandler
 
 import "log"
 
 // 0 代表打印失败信息
 // 1 打印失败信息退出
 // 2 打印失败信息抛出panic
-func ErrorHandler(err error, content string, errCode int) {
+func Err(err error, content string, errCode int) {
 	if err != nil {
 		switch errCode {
 		case 0:
